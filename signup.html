@@ -13,23 +13,27 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="card p-4 shadow">
             <h3 class="text-center">Sign Up</h3>
-            <form>
+            <form action="books.html" onsubmit="return validate()">
                 <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
+                    <label for="username" class="form-label" >Username</label>
                     <input type="text" class="form-control" id="username" placeholder="Enter username">
+                <div class="mb-3">
+                    <label for="Phonenumber" class="form-label" >Phone Number</label>
+                    <input type="text" class="form-control" id="phno" placeholder="Enter Phone Number">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
                 </div>
+                <button id="submit" class="btn btn-primary w-100">Sign Up</button>
                 
-                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
             </form>
         </div>
     </div>
+    <script src="form.js"></script>
 </body>
 </html>
